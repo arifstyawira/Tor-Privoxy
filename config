@@ -1,0 +1,11 @@
+listen-address IP-PUBLIC:1080
+logdir /var/log/privoxy
+logfile logfile
+forward-socks4a    /    127.0.0.1:9050    .
+forward-socks4     /    127.0.0.1:9050    .
+forward-socks5t    /    127.0.0.1:9050    .
+forward-socks5     /    127.0.0.1:9050    .
+
+forward    192.168.*.*/  .
+forward    10.*.*.*/     .
+forward    127.*.*.*/    .

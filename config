@@ -1,4 +1,4 @@
-listen-address IP-PUBLIC:1080
+listen-address 45.130.229.230:1080
 logdir /var/log/privoxy
 logfile logfile
 forward-socks4a    /    127.0.0.1:9050    .
